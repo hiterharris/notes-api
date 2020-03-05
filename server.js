@@ -1,7 +1,6 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const cors = require("cors");
-const port = 3001;
 
 const server = express();
 server.use(bodyParser.json());
@@ -22,13 +21,14 @@ let notes = [
 },
 ];
 
+server.get("/", (req, res) => {
+  res.send('Notes App');
+});
+
 server.get("/notes", (req, res) => {
   res.json(notes);
 });
 
-server.listen(port, err => {
-  if (err) console.log(err);
-  console.log(`server is listening on port ${port}`);
-});
+module.exports = server;
 
 // node server.js
