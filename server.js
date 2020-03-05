@@ -2,6 +2,8 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const cors = require("cors");
 
+// const notesRouter = require('./notes/notes-router.js');
+
 const server = express();
 server.use(bodyParser.json());
 server.use(cors());
@@ -21,14 +23,14 @@ let notes = [
 },
 ];
 
+// server.use('/api/notes', notesRouter);
+
+server.get("/api/notes", (req, res) => {
+  res.json(notes);
+});
+
 server.get("/", (req, res) => {
   res.send('Notes App');
 });
 
-server.get("/notes", (req, res) => {
-  res.json(notes);
-});
-
 module.exports = server;
-
-// node server.js
