@@ -8,7 +8,7 @@ module.exports = {
 };
 
 function find() {
-  return db('note').select('id', 'title', 'date', 'text');
+  return db('notes').select('id', 'title', 'date', 'text');
 }
 
 function findBy(filter) {
