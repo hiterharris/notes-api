@@ -12,13 +12,17 @@ function find() {
 }
 
 function findBy(filter) {
-  return db('users').where(filter);
+  return db('notes').where(filter);
 }
 
-async function add(user) {
-  const [id] = await db('users').insert(user);
+// function add(note) {
+//   const [id] = await db('notes').insert(note);
 
-  return findById(id);
+//   return find();
+// }
+
+function add(note) {
+  return db('notes').insert(note)
 }
 
 function findById(id) {
