@@ -4,13 +4,9 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
-    "cardinal": "^2.1.1",
     "cors": "^2.8.5",
     "express": "^4.17.1",
     "knex": "^0.20.10",
-    "mssql": "^8.1.1",
-    "mysql": "^2.18.1",
-    "mysql2": "^2.3.3",
     "nodemon": "^2.0.2",
     "sqlite3": "^4.2.0"
   },
@@ -23,8 +19,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon index.js",
     "build": "webpack",
-    "prod": "node dist/api.bundle.js",
-    "postinstall": "install-app-deps"
+    "prod": "node dist/api.bundle.js"
   },
   "repository": {
     "type": "git",
