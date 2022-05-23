@@ -13,6 +13,7 @@ module.exports = {
     'mariasql': 'mariasql',
     'mssql': 'mssql',
     'mysql': 'mysql',
+    'mysql2': 'mysql2',
     'oracle': 'oracle',
     'strong-oracle': 'strong-oracle',
     'oracledb': 'oracledb',
