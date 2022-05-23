@@ -18,7 +18,9 @@ module.exports = {
     'strong-oracle': 'strong-oracle',
     'oracledb': 'oracledb',
     'pg': 'pg',
-    'pg-query-stream': 'pg-query-stream'
+    'pg-query-stream': 'pg-query-stream',
+    'better-sqlite3': 'better-sqlite3',
+    'tedious': 'tedious'
   },
   mode: 'development'
 };
